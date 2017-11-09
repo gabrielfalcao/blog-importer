@@ -1,5 +1,4 @@
 import click
-
 from blogimporter.web import application
 
 
@@ -18,7 +17,3 @@ def main():
 
 
 main.add_command(run)
-
-
-if __name__ == '__main__':
-    main()

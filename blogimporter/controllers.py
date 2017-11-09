@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-from __future__ import absolute_import
-from __future__ import print_function
-from __future__ import unicode_literals
-
 from blogimporter.http import root_node
 
 
@@ -18,4 +13,7 @@ def load_node(node):
 
 def scan_files():
     for node in root_node.glob('*.py'):
+        if node.basename.startswith('__'):
+            continue
+
         yield load_node(node)
