@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+  <h1>Code Snippets</h1>
+  <p>Each python file from the blogimporter codebase</p>
+  <section>
+    <h2>python files</h2>
+    <hr />
+    {% for filename, code in snippets.items() %}
+    <p>
+      <h3><code>{{ filename }}</code></h3>
+      <pre class="python code">{{ code|safe }}</pre>
+    </p>
+    <hr />
+    {% endfor %}
+
+  </section>
+</article>
+{% endblock %}

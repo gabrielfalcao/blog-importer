@@ -1,0 +1,10 @@
+*#*
+*.log
+*.pyc
+*/node_modules/*
+*~
+.*#*
+.*.log
+.DS_Store
+.coverage
+nohup.out

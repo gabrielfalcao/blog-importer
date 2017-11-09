@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+  <h1>Blog Importer</h1>
+  <p>Tool to import your blogger content into wordpress</p>
+
+  <section>
+    <h3>Tufte.css</h3>
+    <ul>
+      <li><a href="{{ url_for('tufte') }}">Full Example</a></li>
+    </ul>
+    <p>Source Code
+      <label for="sn-in-his-later-books" class="margin-toggle sidenote-number"></label></span>
+      <input type="checkbox" id="sn-in-his-later-books" class="margin-toggle"/>
+      <span class="sidenote">powered by highlight.js
+      </span>
+    </p>
+    <ul>
+      <li><a href="{{ url_for('snippets') }}">Code Snippets</a></li>
+    </ul>
+  </section>
+</article>
+{% endblock %}
