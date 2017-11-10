@@ -1,2 +1,13 @@
-blogger_outh_client_id: 1038792448154-8rdled8rm4u847dg34055o46e1erpal1.apps.googleusercontent.com
-blogger_outh_client_secret: az-uhySxIdzXpZoyV66WZfEx
+google_oauth_client_id: 1038792448154-8rdled8rm4u847dg34055o46e1erpal1.apps.googleusercontent.com
+google_oauth_client_secret: az-uhySxIdzXpZoyV66WZfEx
+google_oauth_scopes: https://www.googleapis.com/auth/blogger
+server_secret_key: test1234
+SECRET_KEY: test1234
+SESSION_COOKIE_DOMAIN: 127.0.0.1
+SESSION_COOKIE_SECURE: no
+SESSION_KEY_PREFIX: 'falcaoit:session:'
+SESSION_PERMANENT: yes
+SESSION_REDIS: redis://
+SESSION_TYPE: 'filesystem'
+SESSION_USE_SIGNER: no
+SESSION_FILE_DIR: /tmp/blogimporter-sessions

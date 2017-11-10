@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<article>
+  <p>
+    Howdy {{ user.name }} !
+  </p>
+  <section>
+    {% if blog_list %}
+    {% if False %}
+    <p>let's start by selecting which blog to import:</p>
+    <ul>
+      {% for blog in blog_list %}
+      <li>{{ blog }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <pre class="code json">{{ blog_list|safe }}</pre>
+    {% endif %}
+    {% else %}
+    <h4>no blogs found</h4>
+    {% endif %}
+  </section>
+</article>
+{% endblock %}

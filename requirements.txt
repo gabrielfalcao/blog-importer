@@ -1,8 +1,5 @@
 click==6.7
 envelop==0.3.0
-Flask-OAuth==0.12
-Flask-OAuthlib==0.9.4
-Flask==0.12.2
 google-api-python-client==1.6.4
 p4rr0t007==0.3.8
 plant==0.1.3

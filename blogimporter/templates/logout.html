@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block head %}
+<meta http-equiv="refresh" content="3;url={{ url_for('index') }}" />
+{% endblock %}
+
+{% block content %}
+<article>
+  <section>
+    <h3>See you later!</h3>
+    <p>
+      You are being redirected to the main page ...
+    </p>
+  </section>
+</article>
+{% endblock %}

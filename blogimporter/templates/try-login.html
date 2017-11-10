@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block head %}
+<meta http-equiv="refresh" content="5;url={{ url_for('google_login') }}" />
+{% endblock %}
+
+{% block content %}
+<article>
+  <section>
+    <h3>Google Authentication</h3>
+    <p>
+      You are being redirected...
+    </p>
+    <p>
+      Session:
+      <pre>{{ session|safe }}</pre>
+    </p>
+  </section>
+</article>
+{% endblock %}
